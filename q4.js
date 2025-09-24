@@ -15,7 +15,12 @@ switch (op) {
         console.log("Resultado da multiplicação:", n1 * n2);
         break;
     case 4:
-        console.log("Resultado da divisão:", n1 / n2);
+        // Verifica se está dividindo por zero
+        if (n2 === 0) {
+            console.log("Erro: divisão por zero não é permitida.");
+        } else {
+            console.log("Resultado da divisão:", n1 / n2);
+        }
         break;
     default:
         console.log("Operação inválida. Escolha um número entre 1 e 4.");
