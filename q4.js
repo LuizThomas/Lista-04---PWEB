@@ -15,7 +15,6 @@ switch (op) {
         console.log("Resultado da multiplicação:", n1 * n2);
         break;
     case 4:
-        // Verifica se está dividindo por zero
         if (n2 === 0) {
             console.log("Erro: divisão por zero não é permitida.");
         } else {
